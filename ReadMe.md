@@ -13,7 +13,7 @@ git config --global color.ui auto
 
 ## Setup build environment
 ```
-sudo apt-get install -y git python3 ca-certificates build-essential automake procps curl unzip jq
+sudo apt-get install -y git python3 ca-certificates procps wget curl unzip jq build-essential automake
 ```
 
 ## Setup Spack
@@ -27,6 +27,7 @@ spack install python py-pip
 ```
 sudo apt-get install -y --no-install-recommends emacs-nox
 sudo apt-get install -y aspell-en bash-completion rsync
+git config --global core.editor 'emacs -nw' # overidden by GIT_EDITOR
 ```
 
 ## Setup project
@@ -37,9 +38,11 @@ git config user.name ""
 git config user.email ""
 ```
 
-## Setup Spack project environment
+## Setup Spack project environment (spack/user wide)
 ```
 spack env create $(basename $PWD)
 spack env activate -p $(basename $PWD)
 spack env deactivate
 ```
+
+## Setup spack project locally (project)
