@@ -1,0 +1,940 @@
+{
+ "_meta": {
+  "file-type": "spack-lockfile",
+  "lockfile-version": 2
+ },
+ "roots": [
+  {
+   "hash": "onp36hpnccsgqcg3oxz4yu5wqinhd6cu",
+   "spec": "python"
+  },
+  {
+   "hash": "ce6hpkpl3stfeu2rooehzt5gkf5pqrck",
+   "spec": "py-pip"
+  }
+ ],
+ "concrete_specs": {
+  "onp36hpnccsgqcg3oxz4yu5wqinhd6cu": {
+   "python": {
+    "version": "3.8.7",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "bz2": true,
+     "ctypes": true,
+     "dbm": true,
+     "debug": false,
+     "libxml2": true,
+     "lzma": true,
+     "nis": false,
+     "optimizations": false,
+     "patches": [
+      "0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87"
+     ],
+     "pic": true,
+     "pyexpat": true,
+     "pythoncmd": true,
+     "readline": true,
+     "shared": true,
+     "sqlite3": true,
+     "ssl": true,
+     "tix": false,
+     "tkinter": false,
+     "ucs4": false,
+     "uuid": true,
+     "zlib": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87"
+    ],
+    "dependencies": {
+     "bzip2": {
+      "hash": "d4o6xsxropnjj7ldxdvq3lsjzbjaifst",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "expat": {
+      "hash": "qmrx75ndqa6sjorueulltszr6yb4nxrn",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gdbm": {
+      "hash": "l3gcomcskgrpk4kvhohqfb2t73ey5j7x",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gettext": {
+      "hash": "kjmujuckgvhiancdsdlnwng2kga642ye",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libffi": {
+      "hash": "jwts47yunxkbgp7asx775vhjxw25sfsg",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "ncurses": {
+      "hash": "lmetauwoosqcc7rtyqh57tqfb3skm6tp",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "openssl": {
+      "hash": "5kyalke2l4aq6mzqftwbie76ovcfn4wa",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "pkgconf": {
+      "hash": "a53w2kizld3di47ovinnl2oivakils7p",
+      "type": [
+       "build"
+      ]
+     },
+     "readline": {
+      "hash": "bssanntf32le64ocz7vj2g4vtf6td2e2",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "sqlite": {
+      "hash": "chquc44zkk64mhdtdy2caqv6adzz6du4",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "util-linux-uuid": {
+      "hash": "tknfmwla2y65dqmh4suaka3wdszrkzpk",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "xz": {
+      "hash": "ojgnu32vsfdj54727zaas4562xhtx7g4",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "vijrqtzewbjqyr5ywzjg3yhpdx4zsele"
+   }
+  },
+  "d4o6xsxropnjj7ldxdvq3lsjzbjaifst": {
+   "bzip2": {
+    "version": "1.0.8",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "shared": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "diffutils": {
+      "hash": "w25jjmmbdjxmqquspzz46nf22v4wy5oc",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "w2cpcnphexv34fuu2n6r2puczqjgmfxp"
+   }
+  },
+  "w25jjmmbdjxmqquspzz46nf22v4wy5oc": {
+   "diffutils": {
+    "version": "3.7",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libiconv": {
+      "hash": "lz72y2yqho7h5jbs25szgac22nge7ao6",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "w25jjmmbdjxmqquspzz46nf22v4wy5oc"
+   }
+  },
+  "lz72y2yqho7h5jbs25szgac22nge7ao6": {
+   "libiconv": {
+    "version": "1.16",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "lz72y2yqho7h5jbs25szgac22nge7ao6"
+   }
+  },
+  "qmrx75ndqa6sjorueulltszr6yb4nxrn": {
+   "expat": {
+    "version": "2.2.10",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "libbsd": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libbsd": {
+      "hash": "7ewrfsi26souc5hwiznz3fs47fpqgsut",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "qmrx75ndqa6sjorueulltszr6yb4nxrn"
+   }
+  },
+  "7ewrfsi26souc5hwiznz3fs47fpqgsut": {
+   "libbsd": {
+    "version": "0.10.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "7ewrfsi26souc5hwiznz3fs47fpqgsut"
+   }
+  },
+  "l3gcomcskgrpk4kvhohqfb2t73ey5j7x": {
+   "gdbm": {
+    "version": "1.18.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "patches": [
+      "7f569b9287e9e5a4236636eef32ff3428f0462ec17aea359e0ebee07649f1f16"
+     ],
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "7f569b9287e9e5a4236636eef32ff3428f0462ec17aea359e0ebee07649f1f16"
+    ],
+    "dependencies": {
+     "readline": {
+      "hash": "bssanntf32le64ocz7vj2g4vtf6td2e2",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "mrdjuq6mjrwcjedtuna4qmogcackjrrl"
+   }
+  },
+  "bssanntf32le64ocz7vj2g4vtf6td2e2": {
+   "readline": {
+    "version": "8.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "ncurses": {
+      "hash": "lmetauwoosqcc7rtyqh57tqfb3skm6tp",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "k2rsyopqyusq72hhrsbyj4dwwosejf6m"
+   }
+  },
+  "lmetauwoosqcc7rtyqh57tqfb3skm6tp": {
+   "ncurses": {
+    "version": "6.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "symlinks": false,
+     "termlib": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "pkgconf": {
+      "hash": "a53w2kizld3di47ovinnl2oivakils7p",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "5dq7ovz5vqkcwr3apym7jbfw76zknnjv"
+   }
+  },
+  "a53w2kizld3di47ovinnl2oivakils7p": {
+   "pkgconf": {
+    "version": "1.7.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "a53w2kizld3di47ovinnl2oivakils7p"
+   }
+  },
+  "kjmujuckgvhiancdsdlnwng2kga642ye": {
+   "gettext": {
+    "version": "0.21",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "bzip2": true,
+     "curses": true,
+     "git": true,
+     "libunistring": false,
+     "libxml2": true,
+     "tar": true,
+     "xz": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "bzip2": {
+      "hash": "d4o6xsxropnjj7ldxdvq3lsjzbjaifst",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libiconv": {
+      "hash": "lz72y2yqho7h5jbs25szgac22nge7ao6",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libxml2": {
+      "hash": "ofrs3ik4n2ij4nfflg5zjicwhb3jg634",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "ncurses": {
+      "hash": "lmetauwoosqcc7rtyqh57tqfb3skm6tp",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "tar": {
+      "hash": "wiuvgiaxdmmrwxpwelfiqdr3w2mu3r7y",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "xz": {
+      "hash": "ojgnu32vsfdj54727zaas4562xhtx7g4",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "zxhei4nsps553epac4w2nlzxsmkri6oq"
+   }
+  },
+  "ofrs3ik4n2ij4nfflg5zjicwhb3jg634": {
+   "libxml2": {
+    "version": "2.9.10",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "python": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libiconv": {
+      "hash": "lz72y2yqho7h5jbs25szgac22nge7ao6",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "pkgconf": {
+      "hash": "a53w2kizld3di47ovinnl2oivakils7p",
+      "type": [
+       "build"
+      ]
+     },
+     "xz": {
+      "hash": "ojgnu32vsfdj54727zaas4562xhtx7g4",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "z5tifjv4w57nhxj67aha5hetcud6ygrq"
+   }
+  },
+  "ojgnu32vsfdj54727zaas4562xhtx7g4": {
+   "xz": {
+    "version": "5.2.5",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "pic": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "ojgnu32vsfdj54727zaas4562xhtx7g4"
+   }
+  },
+  "emagoh3xhthjct3vs6h2vm66xk47xdna": {
+   "zlib": {
+    "version": "1.2.11",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "optimize": true,
+     "pic": true,
+     "shared": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna"
+   }
+  },
+  "wiuvgiaxdmmrwxpwelfiqdr3w2mu3r7y": {
+   "tar": {
+    "version": "1.32",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "libiconv": {
+      "hash": "lz72y2yqho7h5jbs25szgac22nge7ao6",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "wiuvgiaxdmmrwxpwelfiqdr3w2mu3r7y"
+   }
+  },
+  "jwts47yunxkbgp7asx775vhjxw25sfsg": {
+   "libffi": {
+    "version": "3.3",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "patches": [
+      "26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0"
+     ],
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "26f26c6f29a7ce9bf370ad3ab2610f99365b4bdd7b82e7c31df41a3370d685c0"
+    ],
+    "hash": "jwts47yunxkbgp7asx775vhjxw25sfsg"
+   }
+  },
+  "5kyalke2l4aq6mzqftwbie76ovcfn4wa": {
+   "openssl": {
+    "version": "1.1.1i",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "systemcerts": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "perl": {
+      "hash": "4oy7s5sithrfhb2w2goinmavzmz24y3y",
+      "type": [
+       "build",
+       "test"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "4bjauxnjaqb3v4tu6fyn4beh3ydeefd5"
+   }
+  },
+  "4oy7s5sithrfhb2w2goinmavzmz24y3y": {
+   "perl": {
+    "version": "5.32.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cpanm": true,
+     "shared": true,
+     "threads": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "berkeley-db": {
+      "hash": "b3nozhxlxn6bd334kqsln5rvv7eggxw6",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gdbm": {
+      "hash": "l3gcomcskgrpk4kvhohqfb2t73ey5j7x",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "wyefkd7cqzfj3uzfbntv72fudvldvywh"
+   }
+  },
+  "b3nozhxlxn6bd334kqsln5rvv7eggxw6": {
+   "berkeley-db": {
+    "version": "18.1.40",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "b3nozhxlxn6bd334kqsln5rvv7eggxw6"
+   }
+  },
+  "chquc44zkk64mhdtdy2caqv6adzz6du4": {
+   "sqlite": {
+    "version": "3.34.0",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "column_metadata": true,
+     "fts": true,
+     "functions": false,
+     "rtree": false,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "readline": {
+      "hash": "bssanntf32le64ocz7vj2g4vtf6td2e2",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "ruqjtsbaxh3knprqc2n4ojugm2hibngx"
+   }
+  },
+  "tknfmwla2y65dqmh4suaka3wdszrkzpk": {
+   "util-linux-uuid": {
+    "version": "2.36",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "pkgconf": {
+      "hash": "a53w2kizld3di47ovinnl2oivakils7p",
+      "type": [
+       "build"
+      ]
+     }
+    },
+    "hash": "6z6svlixq6l4x2f2i7takfnr43xdndxh"
+   }
+  },
+  "ce6hpkpl3stfeu2rooehzt5gkf5pqrck": {
+   "py-pip": {
+    "version": "20.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "hi5qpccw2jwwoxsazffme5t4b3qcmbe5",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "onp36hpnccsgqcg3oxz4yu5wqinhd6cu",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "myq5okdkgl4f67mg72v4dmsgjcpqmnib"
+   }
+  },
+  "hi5qpccw2jwwoxsazffme5t4b3qcmbe5": {
+   "py-setuptools": {
+    "version": "50.3.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "python": {
+      "hash": "onp36hpnccsgqcg3oxz4yu5wqinhd6cu",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "wr2tvklpjhv6luh4aa2wx7ckrzf6twyf"
+   }
+  }
+ }
+}

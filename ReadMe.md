@@ -43,6 +43,13 @@ git config user.email ""
 spack env create $(basename $PWD)
 spack env activate -p $(basename $PWD)
 spack env deactivate
+spack env rm $(basename $PWD)
 ```
 
 ## Setup spack project locally (project)
+```
+spack env create -d .
+spack env activate -p -d .
+echo '/.spack-env/' >> .gitignore
+spack env deactivate
+```
