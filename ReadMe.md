@@ -3,6 +3,12 @@ Copyright 2021 Timothy Middelkoop.  License CC by SA 3.0
 
 Simple Spack Tutorial on a Raspberry Pi 4 on Ubuntu 20.10
 
+## Reading and References
+* https://spack.io/
+* https://spack.readthedocs.io/en/latest/index.html
+* https://spack-tutorial.readthedocs.io/en/sc17/tutorial_environments.html
+* https://spack.readthedocs.io/en/latest/environments.html
+
 ## Setup account
 ```
 echo "source ~/spack/share/spack/setup-env.sh" >> ~/.bashrc
@@ -20,7 +26,6 @@ sudo apt-get install -y git python3 ca-certificates procps wget curl unzip jq bu
 ```
 git clone https://github.com/spack/spack.git ~/spack
 source ~/spack/share/spack/setup-env.sh
-spack install python py-pip
 ```
 
 ## Setup development environment
@@ -38,7 +43,14 @@ git config user.name ""
 git config user.email ""
 ```
 
-## Setup Spack project environment (spack/user wide)
+## Setup VS Code
+```
+export EDITOR=code
+echo '/.vscode/' >> .gitignore
+git add .gitignore
+```
+
+## Setup Spack project environment (spack/user wide) - don't do this
 ```
 spack env create $(basename $PWD)
 spack env activate -p $(basename $PWD)
@@ -51,5 +63,21 @@ spack env rm $(basename $PWD)
 spack env create -d .
 spack env activate -p -d .
 echo '/.spack-env/' >> .gitignore
+git add .gitignore
+```
+
+## Setup an env
+```
+spack find
+spack add python py-pip
+git add spack.yaml spack.lock
+spack install
+spack find
+spack config get
+```
+
+## Close out
+```
 spack env deactivate
 ```
+
