@@ -50,9 +50,9 @@ echo '/.vscode/' >> .gitignore
 git add .gitignore
 ```
 
-May wish to exclude `~/.spack-env` to ignore for watches
+Exclude `~/.spack-env` in `.vscode/settings.json` from watcher due to size:
 ```
-{"files.exclude": { "**/.spack-env": true }}
+{"files.watcherExclude": { "**/.spack-env/**": true }}
 ```
 
 ## Setup Spack project environment (spack/user wide) - don't do this
