@@ -4,5 +4,5 @@
 # configuration settings.
 spack:
   # add package specs to the `specs` list
-  specs: [python, py-pip]
+  specs: [python, py-pip, py-numpy]
   view: true

@@ -19,7 +19,7 @@ git config --global color.ui auto
 
 ## Setup build environment
 ```
-sudo apt-get install -y git python3 ca-certificates procps wget curl unzip jq build-essential automake
+sudo apt-get install -y git python3 ca-certificates procps wget curl unzip jq build-essential automake gfortran
 ```
 
 ## Setup Spack

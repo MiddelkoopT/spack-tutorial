@@ -11,6 +11,10 @@
   {
    "hash": "ce6hpkpl3stfeu2rooehzt5gkf5pqrck",
    "spec": "py-pip"
+  },
+  {
+   "hash": "sayomn5e7hbwgfxrm3kzx6nimfps522m",
+   "spec": "py-numpy"
   }
  ],
  "concrete_specs": {
@@ -934,6 +938,390 @@
      }
     },
     "hash": "wr2tvklpjhv6luh4aa2wx7ckrzf6twyf"
+   }
+  },
+  "sayomn5e7hbwgfxrm3kzx6nimfps522m": {
+   "py-numpy": {
+    "version": "1.19.5",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "blas": true,
+     "lapack": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "openblas": {
+      "hash": "kpg2zb7gbswmifglu32rp2kbhwoq72xw",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "py-cython": {
+      "hash": "ghh6l7vr7pycxneqlsorlgum7yt54n77",
+      "type": [
+       "build"
+      ]
+     },
+     "py-setuptools": {
+      "hash": "wtrqeixz44hh6yvd5lz775mjt37nz2id",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "o53ktmzjbv63m5s6kwxk36gn7ed6cgnl"
+   }
+  },
+  "kpg2zb7gbswmifglu32rp2kbhwoq72xw": {
+   "openblas": {
+    "version": "0.3.13",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "consistent_fpcsr": false,
+     "ilp64": false,
+     "pic": true,
+     "shared": true,
+     "threads": "none",
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "hash": "kpg2zb7gbswmifglu32rp2kbhwoq72xw"
+   }
+  },
+  "ghh6l7vr7pycxneqlsorlgum7yt54n77": {
+   "py-cython": {
+    "version": "0.29.21",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "py-setuptools": {
+      "hash": "wtrqeixz44hh6yvd5lz775mjt37nz2id",
+      "type": [
+       "build",
+       "run"
+      ]
+     },
+     "python": {
+      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "type": [
+       "build",
+       "link",
+       "run"
+      ]
+     }
+    },
+    "hash": "xb7sf3bxi6fd65fzz24cpulape6gknom"
+   }
+  },
+  "wtrqeixz44hh6yvd5lz775mjt37nz2id": {
+   "py-setuptools": {
+    "version": "50.3.2",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "python": {
+      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "type": [
+       "build",
+       "run"
+      ]
+     }
+    },
+    "hash": "wr2tvklpjhv6luh4aa2wx7ckrzf6twyf"
+   }
+  },
+  "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor": {
+   "python": {
+    "version": "3.8.7",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "bz2": true,
+     "ctypes": true,
+     "dbm": true,
+     "debug": false,
+     "libxml2": true,
+     "lzma": true,
+     "nis": false,
+     "optimizations": false,
+     "patches": [
+      "0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87"
+     ],
+     "pic": true,
+     "pyexpat": true,
+     "pythoncmd": true,
+     "readline": true,
+     "shared": true,
+     "sqlite3": true,
+     "ssl": true,
+     "tix": false,
+     "tkinter": false,
+     "ucs4": false,
+     "uuid": true,
+     "zlib": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "patches": [
+     "0d98e93189bc278fbc37a50ed7f183bd8aaf249a8e1670a465f0db6bb4f8cf87"
+    ],
+    "dependencies": {
+     "bzip2": {
+      "hash": "d4o6xsxropnjj7ldxdvq3lsjzbjaifst",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "expat": {
+      "hash": "qmrx75ndqa6sjorueulltszr6yb4nxrn",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gdbm": {
+      "hash": "l3gcomcskgrpk4kvhohqfb2t73ey5j7x",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gettext": {
+      "hash": "kjmujuckgvhiancdsdlnwng2kga642ye",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "libffi": {
+      "hash": "jwts47yunxkbgp7asx775vhjxw25sfsg",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "ncurses": {
+      "hash": "lmetauwoosqcc7rtyqh57tqfb3skm6tp",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "openssl": {
+      "hash": "txwokrlwgn7lp4rqu7bcdjswh7zo3kls",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "pkgconf": {
+      "hash": "a53w2kizld3di47ovinnl2oivakils7p",
+      "type": [
+       "build"
+      ]
+     },
+     "readline": {
+      "hash": "bssanntf32le64ocz7vj2g4vtf6td2e2",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "sqlite": {
+      "hash": "chquc44zkk64mhdtdy2caqv6adzz6du4",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "util-linux-uuid": {
+      "hash": "tknfmwla2y65dqmh4suaka3wdszrkzpk",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "xz": {
+      "hash": "ojgnu32vsfdj54727zaas4562xhtx7g4",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "vijrqtzewbjqyr5ywzjg3yhpdx4zsele"
+   }
+  },
+  "txwokrlwgn7lp4rqu7bcdjswh7zo3kls": {
+   "openssl": {
+    "version": "1.1.1i",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "systemcerts": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "perl": {
+      "hash": "p2w36cw4keja2roy4o54siivaibc6kob",
+      "type": [
+       "build",
+       "test"
+      ]
+     },
+     "zlib": {
+      "hash": "emagoh3xhthjct3vs6h2vm66xk47xdna",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "4bjauxnjaqb3v4tu6fyn4beh3ydeefd5"
+   }
+  },
+  "p2w36cw4keja2roy4o54siivaibc6kob": {
+   "perl": {
+    "version": "5.32.1",
+    "arch": {
+     "platform": "linux",
+     "platform_os": "ubuntu20.10",
+     "target": "aarch64"
+    },
+    "compiler": {
+     "name": "gcc",
+     "version": "10.2.0"
+    },
+    "namespace": "builtin",
+    "parameters": {
+     "cpanm": true,
+     "shared": true,
+     "threads": true,
+     "cflags": [],
+     "cppflags": [],
+     "cxxflags": [],
+     "fflags": [],
+     "ldflags": [],
+     "ldlibs": []
+    },
+    "dependencies": {
+     "berkeley-db": {
+      "hash": "b3nozhxlxn6bd334kqsln5rvv7eggxw6",
+      "type": [
+       "build",
+       "link"
+      ]
+     },
+     "gdbm": {
+      "hash": "l3gcomcskgrpk4kvhohqfb2t73ey5j7x",
+      "type": [
+       "build",
+       "link"
+      ]
+     }
+    },
+    "hash": "ohhdmtdz573glbffzaxm7ypabrz5igws"
    }
   }
  }
