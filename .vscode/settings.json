@@ -1,5 +1,6 @@
 {
     "files.watcherExclude": {
         "**/.spack-env/**": true
-    }
+    },
+    "python.pythonPath": ".spack-env/view/bin/python3"
 }
