@@ -5,20 +5,20 @@
  },
  "roots": [
   {
-   "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+   "hash": "abn6rgufz6bfi7555wvjksvdtfhg3nhj",
    "spec": "python"
   },
   {
-   "hash": "tx72wbzlqjxovzgesrpws4o3psyyml6y",
+   "hash": "dbuy6dcy2773efofbkegap4ow33nttc6",
    "spec": "py-pip"
   },
   {
-   "hash": "on35aivhzw6e47fmyag7oz4nybjbnb62",
-   "spec": "py-numpy"
+   "hash": "expphenwe5cxqw5yxsbjntild7sb4fjh",
+   "spec": "py-numpy~lapack"
   }
  ],
  "concrete_specs": {
-  "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor": {
+  "abn6rgufz6bfi7555wvjksvdtfhg3nhj": {
    "python": {
     "version": "3.8.7",
     "arch": {
@@ -109,7 +109,7 @@
       ]
      },
      "openssl": {
-      "hash": "txwokrlwgn7lp4rqu7bcdjswh7zo3kls",
+      "hash": "wtgp5m4bvmjizehq77ofg7j6zeivxvcy",
       "type": [
        "build",
        "link"
@@ -157,7 +157,7 @@
       ]
      }
     },
-    "hash": "vijrqtzewbjqyr5ywzjg3yhpdx4zsele"
+    "hash": "xcyt2chcey3wwny4v4lv32chcv2xsuat"
    }
   },
   "d4o6xsxropnjj7ldxdvq3lsjzbjaifst": {
@@ -683,9 +683,9 @@
     "hash": "jwts47yunxkbgp7asx775vhjxw25sfsg"
    }
   },
-  "txwokrlwgn7lp4rqu7bcdjswh7zo3kls": {
+  "wtgp5m4bvmjizehq77ofg7j6zeivxvcy": {
    "openssl": {
-    "version": "1.1.1i",
+    "version": "1.1.1j",
     "arch": {
      "platform": "linux",
      "platform_os": "ubuntu20.10",
@@ -721,7 +721,7 @@
       ]
      }
     },
-    "hash": "4bjauxnjaqb3v4tu6fyn4beh3ydeefd5"
+    "hash": "r7hwl4kuygyxhm3kummcwp3ym7mjcwym"
    }
   },
   "p2w36cw4keja2roy4o54siivaibc6kob": {
@@ -867,7 +867,7 @@
     "hash": "6z6svlixq6l4x2f2i7takfnr43xdndxh"
    }
   },
-  "tx72wbzlqjxovzgesrpws4o3psyyml6y": {
+  "dbuy6dcy2773efofbkegap4ow33nttc6": {
    "py-pip": {
     "version": "20.2",
     "arch": {
@@ -890,24 +890,24 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "wtrqeixz44hh6yvd5lz775mjt37nz2id",
+      "hash": "exaywxaz6tpwrqlcli57kpcze6iiinpn",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "hash": "abn6rgufz6bfi7555wvjksvdtfhg3nhj",
       "type": [
        "build",
        "run"
       ]
      }
     },
-    "hash": "myq5okdkgl4f67mg72v4dmsgjcpqmnib"
+    "hash": "jzrb4bk2upxmlfglcn3nix3dm4kdw6u2"
    }
   },
-  "wtrqeixz44hh6yvd5lz775mjt37nz2id": {
+  "exaywxaz6tpwrqlcli57kpcze6iiinpn": {
    "py-setuptools": {
     "version": "50.3.2",
     "arch": {
@@ -930,17 +930,17 @@
     },
     "dependencies": {
      "python": {
-      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "hash": "abn6rgufz6bfi7555wvjksvdtfhg3nhj",
       "type": [
        "build",
        "run"
       ]
      }
     },
-    "hash": "wr2tvklpjhv6luh4aa2wx7ckrzf6twyf"
+    "hash": "divuv4tzhnqx7il72eo26o6vk2xtzvbb"
    }
   },
-  "on35aivhzw6e47fmyag7oz4nybjbnb62": {
+  "expphenwe5cxqw5yxsbjntild7sb4fjh": {
    "py-numpy": {
     "version": "1.20.1",
     "arch": {
@@ -955,7 +955,10 @@
     "namespace": "builtin",
     "parameters": {
      "blas": true,
-     "lapack": true,
+     "lapack": false,
+     "patches": [
+      "873745d7b547857fcfec9cae90b09c133b42a4f0c23b6c2d84cf37e2dd816604"
+     ],
      "cflags": [],
      "cppflags": [],
      "cxxflags": [],
@@ -963,6 +966,9 @@
      "ldflags": [],
      "ldlibs": []
     },
+    "patches": [
+     "873745d7b547857fcfec9cae90b09c133b42a4f0c23b6c2d84cf37e2dd816604"
+    ],
     "dependencies": {
      "openblas": {
       "hash": "kpg2zb7gbswmifglu32rp2kbhwoq72xw",
@@ -972,20 +978,20 @@
       ]
      },
      "py-cython": {
-      "hash": "ghh6l7vr7pycxneqlsorlgum7yt54n77",
+      "hash": "lngfi36zy6x7fz7bplffmo6mte3o5pwg",
       "type": [
        "build"
       ]
      },
      "py-setuptools": {
-      "hash": "wtrqeixz44hh6yvd5lz775mjt37nz2id",
+      "hash": "exaywxaz6tpwrqlcli57kpcze6iiinpn",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "hash": "abn6rgufz6bfi7555wvjksvdtfhg3nhj",
       "type": [
        "build",
        "link",
@@ -993,7 +999,7 @@
       ]
      }
     },
-    "hash": "y6adbfpab6m2ntxhrgzeyyizmwhjtbvj"
+    "hash": "wwgt6k74ggkj2hlkz65uiuersnmgitz6"
    }
   },
   "kpg2zb7gbswmifglu32rp2kbhwoq72xw": {
@@ -1025,7 +1031,7 @@
     "hash": "kpg2zb7gbswmifglu32rp2kbhwoq72xw"
    }
   },
-  "ghh6l7vr7pycxneqlsorlgum7yt54n77": {
+  "lngfi36zy6x7fz7bplffmo6mte3o5pwg": {
    "py-cython": {
     "version": "0.29.21",
     "arch": {
@@ -1048,14 +1054,14 @@
     },
     "dependencies": {
      "py-setuptools": {
-      "hash": "wtrqeixz44hh6yvd5lz775mjt37nz2id",
+      "hash": "exaywxaz6tpwrqlcli57kpcze6iiinpn",
       "type": [
        "build",
        "run"
       ]
      },
      "python": {
-      "hash": "ccyg3ydr4i4qnzbs6ikelbpnlvztpqor",
+      "hash": "abn6rgufz6bfi7555wvjksvdtfhg3nhj",
       "type": [
        "build",
        "link",
@@ -1063,7 +1069,7 @@
       ]
      }
     },
-    "hash": "xb7sf3bxi6fd65fzz24cpulape6gknom"
+    "hash": "zhmtbb3wj74yg2li7n4bxbjvwjcapzxo"
    }
   }
  }
