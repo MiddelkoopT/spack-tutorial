@@ -85,3 +85,17 @@ spack config get
 ```
 spack env deactivate
 ```
+
+## Docker
+
+Build and Run
+```
+./package.sh
+docker run --rm -it spack-tutorial
+```
+
+Cleanup Docker processes and images
+```
+docker rm  `docker ps --no-trunc -aq`
+docker rmi `docker images --no-trunc -aq --filter "dangling=true"`
+```
