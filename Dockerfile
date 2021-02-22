@@ -43,6 +43,7 @@ RUN ( . ${SPACK_ROOT}/share/spack/setup-env.sh ; spack gc --yes )
 #### Runtime stage
 FROM base AS deploy
 COPY --from=clean ${SPACK_ROOT} ${SPACK_ROOT}
+COPY --from=clean ${HOME}/.spack ${HOME}/.spack
 COPY --from=app ${APP} ${APP}
 
 # Expose App
