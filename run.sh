@@ -3,4 +3,4 @@
 . ./environment.sh
 
 python3 one.py
-python3 two.py
+python3 two-numpy.py

@@ -2,4 +2,4 @@
 import sys
 
 print("one.py> hello")
-print(sys.version)
+print("---",sys.version)
