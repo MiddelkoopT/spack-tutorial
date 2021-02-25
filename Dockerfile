@@ -34,7 +34,7 @@ RUN ( . ${SPACK_ROOT}/share/spack/setup-env.sh ; \
 FROM spack AS app
 USER nobody
 WORKDIR ${APP}
-COPY --chown=nobody:nogroup one.py two.py ./
+COPY --chown=nobody:nogroup one.py two*.py ./
 
 ### Clean stage
 FROM spack AS clean
