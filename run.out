@@ -1,5 +1,6 @@
+hello.tcl> Hello TCL
 one.py> hello
-[GCC 10.2.0]
+[GCC 8.3.0]
 two.py>
 [[0.51182162 0.9504637 ]
  [0.14415961 0.94864945]

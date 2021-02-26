@@ -19,6 +19,6 @@ if [ ! -f run.md5 ] ; then
     md5sum run.out > run.md5
 else
     md5sum -c run.md5
+    echo "=== All tests passwd"
 fi
 
-echo "=== All tests passwd"
