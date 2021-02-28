@@ -22,28 +22,41 @@ doing the theory and why first, then doing it by hand on the board,
 then finally in the console with R.
 
 ## Outline
-1. Slides
-1. Chapter 1. Moving in (gives time to build during chapter 2)
+1. Chapter 1 - Motivation and Theory - slides
+2. Chapter 2 - The Plan - Go over the chapters and communicat our end goal.
+3. Chapter 3 - Moving In - user space
    1. Bring up the cloud with terraform.
-   1. ssh and move in (skel+ update)
-   1. Install spack (git clone)
+   1. ssh and move in (skel + update + build-dep)
+   1. Install spack (git clone and source environment)
    1. Kick off install `spack install tcl`
-   1. Kick off install of other software in another window `spack install python py-pip ; spack install py-numpy~lapack` `install -dv projects/launch`
-2. Chapter 2. Setup the project.
-   1. git init 
+   1. Kick off install of other software in another terminal - gives time to build. 
+      1. spack install python py-pip 
+   1. Kick off another terminal and explore varients - ~lapack 
+      1. spack install py-numpy~lapack
+   1. Return to original tcl shell - explore system space - `spack load` - echo $PATH 
+2. Chapter 4 - Setup the Project - project space
+   1. `install -dv projects/launch`
+   1. `git init`
+   1. get config user.name, user.email
+   1. echo "# Launch" > ReadMe.md ; git add ; git commit  ; git branch -m main  
    1. setup spack env.
+   1. spack install tcl
+   1. echo 'puts "hello world"' > one.tcl
+3. Chapter 5. Move in to the project
    1. Basic system python3 project - system only - be simple
+   1. Python3 Hello world
    1. Install spack env python3 `spack add python ; spack install` - this is key
    1. Look at spack.yaml
-3. Chapter 3. Move in to the project
-   1. Python3 Hello world
+   1. Look at spack.lock
    1. Python3 numpy.
+   1. ReadMe.md
    1. . ./envrionment.sh
    1. ./setup.sh
    1. ./cleanup.sh
    1. ./run.sh
    1. ./test.sh
-4. Chapter 4. Exporting the project
+   1. Developing - VS Code?
+4. Chapter 6. Exporting the project
    1. Docker?
 
 ## Scientific Workflows
