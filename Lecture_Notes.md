@@ -23,14 +23,19 @@ then finally in the console with R.
 
 ## Outline
 1. Chapter 1 - Motivation and Theory - slides
-2. Chapter 2 - The Plan - Go over the chapters and communicat our end goal.
+   1. This is about the why (do it), and the how (it works). The "what" (to type) is easy (read the docs).
+2. Chapter 2 - The Plan - Go over the chapters and communicat our end goal (reproducable science).
 3. Chapter 3 - Moving In - user space
    1. Bring up the cloud with terraform.
    1. ssh and move in (skel + update + build-dep)
    1. Install spack (git clone and source environment)
    1. Kick off install `spack install tcl`
    1. Kick off install of other software in another terminal - gives time to build. 
-      1. spack install python py-pip 
+      1. spack install python py-pip
+      1. parallel:
+```
+DATE=$(date) ; for I in $(spack spec --json python py-pip | jq -r '.spec[] | keys | .[]') ; do echo $I ; spack install $I & done ; wait ; echo "=== DONE: $DATE to $(date)"
+```
    1. Kick off another terminal and explore varients - ~lapack 
       1. spack install py-numpy~lapack
    1. Return to original tcl shell - explore system space - `spack load` - echo $PATH 
