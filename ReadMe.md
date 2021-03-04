@@ -10,7 +10,7 @@ Simple Spack Tutorial on a Raspberry Pi 4 on Ubuntu 20.10
 * https://spack.readthedocs.io/en/latest/environments.html
 
 ## Setup account
-```
+```bash
 echo "source ~/spack/share/spack/setup-env.sh" >> ~/.bashrc
 echo "shopt -s globstar dotglob" >> ~/.bashrc
 echo "export LESS=-icMR" >> ~/.bashrc
