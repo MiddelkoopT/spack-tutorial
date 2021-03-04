@@ -18,53 +18,33 @@ git config --global color.ui auto
 ```
 
 ## Setup build environment
-```
+```bash
 sudo apt-get install -y git python3 ca-certificates procps wget curl unzip jq build-essential automake gfortran
 ```
 
 ## Setup Spack
-```
+```bash
 git clone https://github.com/spack/spack.git ~/spack
 source ~/spack/share/spack/setup-env.sh
 ```
 
 ## Setup development environment
-```
+```bash
 sudo apt-get install -y --no-install-recommends emacs-nox
 sudo apt-get install -y aspell-en bash-completion rsync
 git config --global core.editor 'emacs -nw' # overidden by GIT_EDITOR
 ```
 
 ## Setup project
-```
+```bash
 install -dv ~/projects/spack-tutorial
 cd ~/projects/spack-tutorial && git init
 git config user.name ""
 git config user.email ""
 ```
 
-## Setup VS Code
-```
-export EDITOR=code
-echo '/.vscode/' >> .gitignore
-git add .gitignore
-```
-
-Exclude `~/.spack-env` in `.vscode/settings.json` from watcher due to size:
-```
-{"files.watcherExclude": { "**/.spack-env/**": true }}
-```
-
-## Setup Spack project environment (spack/user wide) - don't do this
-```
-spack env create $(basename $PWD)
-spack env activate -p $(basename $PWD)
-spack env deactivate
-spack env rm $(basename $PWD)
-```
-
 ## Setup spack project locally (project)
-```
+```bash
 spack env create -d .
 spack env activate -p -d .
 echo '/.spack-env/' >> .gitignore
@@ -72,7 +52,7 @@ git add .gitignore
 ```
 
 ## Setup an env
-```
+```bash
 spack find
 spack add python py-pip
 git add spack.yaml spack.lock
@@ -81,21 +61,32 @@ spack find
 spack config get
 ```
 
-## Close out
-```
+## Deactivate environment
+```bash
 spack env deactivate
 ```
 
-## Docker
-
-Build and Run
+## Setup VS Code
+```bash
+export EDITOR=code
+echo '/.vscode/' >> .gitignore
+git add .gitignore
 ```
+
+Exclude `~/.spack-env` in `.vscode/settings.json` from watcher due to size:
+```json
+{"files.watcherExclude": { "**/.spack-env/**": true }}
+```
+
+## Docker
+Build and Run
+```bash
 ./package.sh
 docker run --rm -it spack-tutorial
 ```
 
 Cleanup Docker processes and images
-```
+```bash
 docker rm  `docker ps --no-trunc -aq`
 docker rmi `docker images --no-trunc -aq --filter "dangling=true"`
 ```
