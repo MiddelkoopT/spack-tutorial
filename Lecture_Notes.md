@@ -14,13 +14,6 @@ Don’t worry I have some frozen lasagna in the freezer.
 
 Please type questions into the chat.
 
-## Developmental Notes
-
-* Tell a story to give context and references so students can follow
-the console better, similar to what was done in statistics class with
-doing the theory and why first, then doing it by hand on the board,
-then finally in the console with R.
-
 ## Outline
 1. Chapter 1 - Motivation and Theory - slides
    1. This is about the why (do it), and the how (it works). The "what" (to type) is easy (read the docs).
@@ -39,7 +32,7 @@ DATE=$(date) ; for I in $(spack spec --json python py-pip | jq -r '.spec[] | key
    1. Kick off another terminal and explore varients - ~lapack 
       1. spack install py-numpy~lapack
    1. Return to original tcl shell - explore system space - `spack load` - echo $PATH 
-2. Chapter 4 - Setup the Project - project space
+4. Chapter 4 - Setup the Project - project space
    1. `install -dv projects/launch`
    1. `git init`
    1. get config user.name, user.email
@@ -47,7 +40,7 @@ DATE=$(date) ; for I in $(spack spec --json python py-pip | jq -r '.spec[] | key
    1. setup spack env.
    1. spack install tcl
    1. echo 'puts "hello world"' > one.tcl
-3. Chapter 5. Move in to the project
+5. Chapter 5. Move in to the project
    1. Basic system python3 project - system only - be simple
    1. Python3 Hello world
    1. Install spack env python3 `spack add python ; spack install` - this is key
@@ -61,18 +54,6 @@ DATE=$(date) ; for I in $(spack spec --json python py-pip | jq -r '.spec[] | key
    1. ./run.sh
    1. ./test.sh
    1. Developing - VS Code?
-4. Chapter 6. Exporting the project
-   1. Docker?
+6. Chapter 6. Exporting the project
+   1. Docker
 
-## Scientific Workflows
-
-### Use Simple Solutions
-Use simple solutions until they are not.
-
-Python example.
-1. System (package) interpreter and built in packages/modules.
-2. Use venv
-3. conda, anaconda, etc - skip this step
-4. spack
-
-Always stay in the project context (don't use user-space `pip install`)
