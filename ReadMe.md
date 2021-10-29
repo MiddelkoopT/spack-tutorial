@@ -33,6 +33,9 @@ source ~/spack/share/spack/setup-env.sh
 sudo apt-get install -y --no-install-recommends emacs-nox
 sudo apt-get install -y aspell-en bash-completion rsync
 git config --global core.editor 'emacs -nw' # overidden by GIT_EDITOR
+git config --global push.default simple
+git config --global pull.ff only
+git config --global init.defaultBranch main
 ```
 
 ## Setup project
@@ -83,6 +86,12 @@ Build and Run
 ```bash
 ./package.sh
 docker run --rm -it spack-tutorial
+```
+
+Build and run the using the develop branch of Spack
+```
+docker build -t spack-develop --build-arg spack_branch=develop .
+docker run --rm -it spack-develop
 ```
 
 Cleanup Docker processes and images

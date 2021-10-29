@@ -1,15 +1,18 @@
 #### Build stage
-FROM ubuntu:20.10 AS base
+FROM ubuntu:21.10 AS base
 
 ## Basic install/update
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get update && apt-get install -y apt-utils && apt-get clean
 RUN apt-get update && apt-get dist-upgrade -y && apt-get clean
 RUN apt-get install -y python3 ca-certificates procps curl unzip jq && apt-get clean
-RUN apt-get install -y build-essential automake gfortran && apt-get clean
+RUN apt-get install -y build-essential automake python3-dev gfortran file && apt-get clean
+
+## Configuration
+ARG spack_branch=releases/v0.17
+ENV SPACK_ROOT=/spack SPACK_BRANCH=$spack_branch HOME=/ APP=/app
 
 ## Base envrionment
-ENV SPACK_ROOT=/spack HOME=/ APP=/app
 RUN install -dv -o nobody ${SPACK_ROOT} ${HOME}/.spack ${APP}
 RUN echo ". ${SPACK_ROOT}/share/spack/setup-env.sh" >> /etc/bash.bashrc
 RUN echo "spack env activate -p ${APP}" >> /etc/bash.bashrc
@@ -20,7 +23,7 @@ FROM base AS spack
 ## Build Spack
 RUN apt-get install -y git && apt-get clean
 USER nobody
-RUN git clone --depth=1 https://github.com/spack/spack.git
+RUN git clone --depth=1 -b ${SPACK_BRANCH} https://github.com/spack/spack.git
 RUN ( . ${SPACK_ROOT}/share/spack/setup-env.sh ; spack install python py-pip )
 
 ## Build app environment
